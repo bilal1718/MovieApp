@@ -1,0 +1,123 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@100;400&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Serif', serif;
+  background: linear-gradient(89.7deg, rgb(0, 0, 0) -10.7%, rgb(53, 92, 125) 88.8%);
+}
+
+header {
+  background: linear-gradient(89.7deg, rgb(0, 0, 0) -10.7%, rgb(53, 92, 125) 88.8%);
+  padding: 20px;
+  display: flex;
+  outline: none;
+  border: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-title {
+  color: #fff;
+  margin: 0;
+  font-size: 39px;
+}
+
+.search-container {
+  display: flex;
+}
+
+.search-container input[type="text"] {
+  padding: 8px;
+  border-radius: 4px 0 0 4px;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.search-container button {
+  background-color: #0e4c92;
+  color: #fff;
+  padding: 9px 16px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.movie-card {
+  margin: 20px;
+  width: calc(33.33% - 40px);
+  height: 340px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #234576;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 10px 12px 14px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s ease;
+}
+
+.movie-card:hover {
+  transform: translateY(-5px);
+}
+
+.movie-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.movie-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  color: #fff;
+  background: #2349;
+  text-align: center;
+  opacity: 0.2;
+  transform: translateY(100%);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.movie-card:hover .movie-info {
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+.movie-info h3,
+.movie-info p {
+  margin: 5px 0;
+}
+
+.movie-info p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+  .movie-card {
+    width: calc(50% - 40px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .movie-card {
+    width: calc(100% - 40px);
+  }
+}
