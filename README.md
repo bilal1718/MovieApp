@@ -12,7 +12,13 @@ This is a movie recommendation app that allows users to search for movies and ge
 - Responsive design: The app is designed to adapt to different screen sizes and provide a consistent user experience.
  ## Live Demo
 
-A live demo of the Movie Recommendation App can be accessed [here](https://example.com).
+A live demo of the Movie Recommendation App can be accessed [here]https://lambent-gelato-4dd7c0.netlify.app
+
+Deploys from GitHub.
+
+Last published at 12:13 PM.
+
+.
 
 ## Technologies Used
 
